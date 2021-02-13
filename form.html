@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          Nome
+          <input type="text" size="40" maxlength="35" name="nnome" id="inome" placeholder="seu nome" />
+        </p>
+        <p>
+          Data Nascimento
+          <input type="date" name="ndata" id="idata" />
+        </p>
+        <p>
+          Sexo
+          <input type="radio" name="nsexo" id="imasc" /><label for="imasc">Masculino</label>
+          <input type="radio" name="nsexo" id="ifem" /><label for="ifem">Feminino</label>
+        </p>
+        <p>
+          Email
+          <input type="email" name="nemail" id="iemail" size="20" maxlength="20" placeholder="email@mail.com" />
+        </p>
+        <p>
+          Senha <input type="password" name="nsenha" id="isenha" maxlength="12" size="12" placeholder="12 letras" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contato</legend>
+        <p>
+          Estado
+          <select>
+            <optgroup label="Sudeste">
+              <option value="MG">Minas Gerais</option>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+            <optgroup label="Centro-Oeste">
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="GO">Goiás</option>
+            </optgroup>
+            <optgroup label="Sul">
+              <option value="PR">Paraná</option>
+              <option value="SC">Santa Catarina</option>
+            </optgroup>
+          </select>
+        </p>
+        <p>
+          Cidade
+          <input
+            type="text"
+            name="ncidade"
+            id="icidade"
+            maxlength="20"
+            size="20"
+            placeholder="São Paulo"
+            list="cidades"
+          />
+          <datalist id="cidades">
+            <option>São Paulo</option>
+            <option>São Pedro</option>
+            <option>Guarujá</option>
+            <option>Dourados</option>
+          </datalist>
+        </p>
+        <p>
+          Endereço
+          <input type="text" name="nendereco" id="iendereco" size="30" maxlength="30" placeholder="Rua, Av, Trav..." />
+        </p>
+        <p>Número <input type="number" name="nnumero" id="inumero" min="0" max="99999" /></p>
+        <p>Complemento <textarea name="ncomplement" id="icomplemento" rows="5" cols="20"></textarea></p>
+        <p>
+          Telefone
+          <input type="text" name="ntelefone" id="itelefone" size="18" maxlength="18" placeholder="(11) 9 9999-3333" />
+        </p>
+        <p>
+          <input type="checkbox" name="npromocao" id="ipromocao" />
+          <label for="ipromocao"> Gostaria de receber emails promocionais </label>
+        </p>
+      </fieldset>
+
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpar" />
+    </form>
+  </body>
+</html>
